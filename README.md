@@ -4,3 +4,5 @@
   <li>Faire le CSS</li>
   <li>Envoyer au prof</li>
 </ul>
+<h1>Consigne</h1>
+https://perso.liris.cnrs.fr/pierre-antoine.champin/enseignement/intro-web/projet.html
