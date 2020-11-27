@@ -1,2 +1,5 @@
 <h1>Liste des choses à faire</h1>
--> Finir le site
+<ul>
+  <li>Finir le site</li>
+  <li>Faire un joli site</li>
+</ul>
