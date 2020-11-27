@@ -1,43 +1,83 @@
 <!DOCTYPE html>
 <html lang="fr">
 	<head>
-		<title>Nom de la marque</title>
+		<title>NarTin Club</title>
 		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<link rel="shortcut icon" href="image/logo.png">
+		<link rel="shortcut icon" href="images/logoNoText.jpg">
 	</head>
 	<body>
 		<header>
-			<h1>Nom de la marque</h1>
-			<h2>Un slogan stylé et fun</h2>
-			<img src="#" alt="Logo"/>
+			<div id="headerHeader">
+				<div id="logo">
+					<a href="./index.html"><img src="images/logo.jpg" alt="Logo"/></a>
+				</div>
+				<div id="titre">
+					<h1>NarTin Club</h1>
+					<h2>Achetez tout et n'importe quoi, mais surtout n'importe quoi</h2>
+				</div>
+			</div>
 			<nav>
-			
-				<ul>
-					<li><a href="#">Nos produits</a></li>
-					<li><a href="#">Ma commande</a></li>
-					<li><a href="#">Qui sommes nous ?</a></li>
-				</ul>
+				<div id="menu">
+					<h3 id="menuTitre">Menu</h3>
+					<ul>
+						<li><a href="#">Nos produits</a></li>
+						<li><a href="#">Ma commande</a></li>
+						<li><a href="#">Qui sommes-nous ?</a></li>
+					</ul>
+				</div>
 				
-				<form>
-					<label>Rechercher un produit</label>
-					<input type="text"/>
-					<button>Rechercher</button>
-				</form>
-				
+				<div id="search">
+					<form>
+						<input id="searchBar" placeholder="Rechercher un produit" type="text"/>
+						<input id="searchButton" type="image" alt="Rechercher" src="images/loupe.png"/>
+					</form>
+				</div>
 			</nav>
 		</header>
 		
 		
+		<h1>Bienvenue sur le site de NarTin Club</h1>
+		<section>
+			<article>
+				<img src="#" alt="Black Friday"/>
+				<h2>Black Friday</h2>
+				<h3>De -10 à -80% de promotion* sur vos articles préférés !!!</h3>
+				<p>Des promotions en folie jusqu'au 29/11 à l'occasion du Black Friday. De quoi faire le plein de fun avant les fêtes de Noël en gardant le porte monnaie au chaud.</p>
+				<p>Voir condition en magasin ou <a href="#">en cliquant ici.</a></p>
+			</article>
+			<article>
+				<img src="#" alt="Produit du jour"/>
+				<h2>Le produit du jour</h2>
+				<h3>Retrouvez le [nom d'un jouet] à seulement 25€ jusqu'à ce soir</h3>
+				<p>Aujourd'hui notre équipe vous présente le [nom du jouet] Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sed feugiat nunc. Aliquam sed magna non arcu aliquet dapibus. Suspendisse faucibus dui mauris, a consequat est dapibus ut. Quisque aliquam purus velit, id rhoncus ex mollis vitae. Aenean vitae nunc laoreet, consequat dolor quis, malesuada magna.<a href="#">Plus de détail</a></p>
+			</article>
+			<article>
+				<img src="#" alt="Code promo"/>
+				<h2>Promotions en folie</h2>
+				<h3>Notre partenaire RhinoSheild vous offre un troisième jeux [marque] pour tout [jeux] acheté</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sed feugiat nunc. Aliquam sed magna non arcu aliquet dapibus. Suspendisse faucibus dui mauris, a consequat est dapibus ut. Quisque aliquam purus velit, id rhoncus ex mollis vitae.</p>
+				<p>Voir condition en magasin ou <a href="#">en cliquant ici.</a></p>
+			</article>
+			<article>
+				<img src="#" alt="Père Noël"/>
+				<h2>C'est bientôt Noël !!!</h2>
+				<h3>Avant de livrer des cadeaux, le Père Noël s'invite chez NarTin Club</h3>
+				<p>Viens faire un tour chez NarTin Club entre du 17 au 20/12 pour prendre une belle photo avec lui et lui donner ta liste.<a href="#">Plus de détail</a></p>
+			</article>
+		</section>
+		
 		
 		<footer>
-			<h3>Nos réseaux sociaux</h3>
-			<ul>
-				<li>Facebook</li>
-				<li>Twitter</li>
-				<li>Instagram</li>
-			</ul>
-			<a href="mailto:a@a.a">Nous contacter</a>
+			<div id="contact">
+				<h3>Rejoignez nous</h3>
+				<ul>
+					<li><img class="imgRéseau" src="images/facebook.png"/>- Facebook</li>
+					<li><img class="imgRéseau" src="images/twitter.png"/>- Twitter</li>
+					<li><img class="imgRéseau" src="images/instagram.png"/>- Instagram</li>
+				</ul>
+				<h3 id="footerMail"><a href="mailto:a@a.a">Nous contacter</a></h3>
+			</div>
 		</footer>
 	</body>
 </html>
