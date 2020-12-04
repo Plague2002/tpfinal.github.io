@@ -2,7 +2,7 @@
 <ul>
   <li>Finir le HTML
     <ul>
-      <li>Remplir le contenu de chaque page (finir la page de recherche, la page d'article et la page de présentation)</li>
+      <li>Remplir le contenu de chaque page</li>
       <li>Compléter les blancs et le Lorem Ipsum</li>
     </ul>
   </li>

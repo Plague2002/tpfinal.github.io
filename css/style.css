@@ -1,7 +1,13 @@
+body {
+	margin:0px;
+	background-color:#E9F531;
+}
+
 header {
 	border: 1px solid black;
 	position: relative;
 	margin-bottom: 50px;
+	background-color:#4053DA;
 }
 
 header:after {
@@ -118,9 +124,74 @@ nav {
 	
 }
 
+
+section {
+	margin-left:20px;
+	margin-right:20px;
+	margin-bottom:50px;
+	background-color:#4EADD8;
+	padding-left:3px;
+	padding-rifht:3px;
+	border-top:3px solid black;
+}
+
+section h2 {
+	text-align:center;
+}
+
+section article {
+	margin-top:50px;
+	border-bottom:3px solid black;
+}
+
+section article:after {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+.blackFriday img{
+	float:left;
+	width:230px;
+}
+.blackFriday h3, .blackFriday h4, .blackFriday p{
+	text-align:center;
+}
+
+.playmo img{
+	float:right;
+	width:390px;
+	height:400px;
+}
+
+.playmo h3, .playmo h4, .playmo p{
+	text-align:center;
+}
+
+.rhino img{
+	float:right;
+	margin-right:240px;
+}
+
+.rhino h3{
+	text-align:center;
+	margin-bottom:50px;
+	line-height:120px;
+}
+
+.noel img{
+	margin-left:345px;
+}
+.noel h3, .noel h4, .noel p{
+	text-align:center;
+}
+
+
+
 footer {
 	border: 1px solid black;
 	margin-bottom: 1px;	
+	background-color:#4053DA;
 }
 
 footer h3 {
@@ -154,6 +225,8 @@ footer h3 {
 	font-size: 32px;
 }
 
-
+#contact ul li a{
+	text-decoration:none;
+}
 
 

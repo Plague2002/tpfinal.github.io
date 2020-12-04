@@ -14,7 +14,7 @@
 				</div>
 				<div id="titre">
 					<h1>NarTin Club</h1>
-					<h2>Achetez tout et n'importe quoi, mais surtout n'importe quoi</h2>
+					<h2>Achetez tout et n'importe quoi, mais surtout n'importe quoi !</h2>
 				</div>
 			</div>
 			<nav>
@@ -28,7 +28,7 @@
 				</div>
 				
 				<div id="search">
-					<form>
+					<form action="./pages/recherche.html" method="post" enctype="multipart/form-data">
 						<input id="searchBar" placeholder="Rechercher un produit" type="text"/>
 						<input id="searchButton" type="image" alt="Rechercher" src="images/loupe.png"/>
 					</form>
@@ -39,31 +39,41 @@
 		
 		<section>
 			<h2>Bienvenue sur le site de NarTin Club</h2>
-			<article>
-				<img src="#" alt="Black Friday"/>
+			<article class="blackFriday">
+				<img src="images/bf.png" alt="Black Friday"/>
 				<h3>Black Friday</h3>
-				<h4>De -10 à -80% de promotion* sur vos articles préférés !!!</h4>
-				<p>Des promotions en folie jusqu'au 29/11 à l'occasion du Black Friday. De quoi faire le plein de fun avant les fêtes de Noël en gardant le porte monnaie au chaud.</p>
-				<p>Voir condition en magasin ou <a href="#">en cliquant ici.</a></p>
+				<h4>De -10% à -80% de remise sur vos articles préférés !!!</h4>
+				<p>Des promotions de folie jusqu'au 29/11 à l'occasion du Black Friday. De quoi faire le plein de fun avant les fêtes de Noël en gardant le porte monnaie remplis.</p>
+				<p2>Voir condition en magasin ou 
+				<a href="#">en cliquant ici.</a></p2>
 			</article>
-			<article>
-				<img src="#" alt="Produit du jour"/>
+			<article class="playmo">
+				<img src="images/playmobil.jpg" alt="Produit du jour"/>				
 				<h3>Le produit du jour</h3>
-				<h4>Retrouvez le [nom d'un jouet] à seulement 25€ jusqu'à ce soir</h4>
-				<p>Aujourd'hui notre équipe vous présente le [nom du jouet] Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sed feugiat nunc. Aliquam sed magna non arcu aliquet dapibus. Suspendisse faucibus dui mauris, a consequat est dapibus ut. Quisque aliquam purus velit, id rhoncus ex mollis vitae. Aenean vitae nunc laoreet, consequat dolor quis, malesuada magna.<a href="#">Plus de détail</a></p>
+				<h4>Retrouvez la cabane Playmobile® à seulement 25€ jusqu'à demain</h4>
+				<p>Aujourd'hui notre équipe vous présente la nouvelle cabane de la marque Playmobile®
+				contenant de nouvelles pièces ainsi que des animaux et personnages exclusifs !
+				<br/>
+				<a href="#">Profitez-en</a></p>
 			</article>
-			<article>
-				<img src="#" alt="Code promo"/>
-				<h3>Promotions en folie</h3>
-				<h4>Notre partenaire RhinoSheild vous offre un troisième jeux [marque] pour tout [jeux] acheté</h4>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sed feugiat nunc. Aliquam sed magna non arcu aliquet dapibus. Suspendisse faucibus dui mauris, a consequat est dapibus ut. Quisque aliquam purus velit, id rhoncus ex mollis vitae.</p>
-				<p>Voir condition en magasin ou <a href="#">en cliquant ici.</a></p>
+			<article class="rhino">
+				<img src="images/rs.jpg" alt="Code promo"/>
+				<h3>La bonne affaire !</h3>
+				
+				<h4>Notre partenaire RhinoShield vous offre un troisième jeux Nintendo pour toutes console achetée avec deux jeux !</h4>
+				<p>RhinoShield vous offre le jeu de votre choix our chaque achat de Nintendo Switch
+				incluant les jeux Mario Kart 10 et Super Smash Melee
+				<p>
+				<a href="https://rhinoshield.fr/">Retrouvez notre partenaire préféré ici</a></p>
 			</article>
-			<article>
-				<img src="#" alt="Père Noël"/>
+			<article class="noel">
+				<img src="images/noel.jpg" alt="Père Noël"/>
 				<h3>C'est bientôt Noël !!!</h3>
+				
 				<h4>Avant de livrer des cadeaux, le Père Noël s'invite chez NarTin Club</h4>
-				<p>Viens faire un tour chez NarTin Club entre du 17 au 20/12 pour prendre une belle photo avec lui et lui donner ta liste.<a href="#">Plus de détail</a></p>
+				<p>Viens faire un tour chez NarTin Club du 17/12 au 20/12 pour prendre une belle photo avec lui et lui donner ta liste.
+				<br/>
+				<a href="#">Plus de détail</a></p>
 			</article>
 		</section>
 		
@@ -72,9 +82,9 @@
 			<div id="contact">
 				<h3>Rejoignez nous</h3>
 				<ul>
-					<li><img class="imgRéseau" alt="Facebook" src="./images/facebook.png"/>- Facebook</li>
-					<li><img class="imgRéseau" alt="Twitter" src="./images/twitter.png"/>- Twitter</li>
-					<li><img class="imgRéseau" alt="Instagram" src="./images/instagram.png"/>- Instagram</li>
+					<li><a href="#"><img class="imgRéseau" alt="Facebook" src="./images/facebook.png"/>- Facebook</a></li>
+					<li><a href="#"><img class="imgRéseau" alt="Twitter" src="./images/twitter.png"/>- Twitter</a></li>
+					<li><a href="#"><img class="imgRéseau" alt="Instagram" src="./images/instagram.png"/>- Instagram</a></li>
 				</ul>
 				<h3 id="footerMail"><a href="mailto:a@a.a">Nous contacter</a></h3>
 			</div>
