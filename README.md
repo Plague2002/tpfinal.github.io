@@ -3,7 +3,6 @@
   <li>Finir le HTML
     <ul>
       <li>Remplir le contenu de chaque page (page de recherche, page d'article et page de présentation)</li>
-      <li>Compléter les blancs et le Lorem Ipsum</li>
     </ul>
   </li>
   <li>Faire le CSS
