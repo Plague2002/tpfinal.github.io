@@ -7,7 +7,8 @@ header {
 	border: 1px solid black;
 	position: relative;
 	margin-bottom: 50px;
-	background-color:#4053DA;
+	background-color: #0b20b7;
+	color: #feffd5;
 }
 
 header:after {
@@ -16,7 +17,8 @@ header:after {
 	display: block;
 }
 
-#headerHeader {
+header a, footer a {
+	text-decoration: none;
 }
 
 #titre {
@@ -54,7 +56,6 @@ nav {
 
 #menu {
 	margin-top: 30px;
-	margin-bottom: 30px;
 }
 
 #menu:hover {
@@ -67,29 +68,30 @@ nav {
 	text-align: center;
 }
 
-#menu:hover h3 {
-	display: none;
-}
-
-#menu a {
-	text-decoration: none;
-}
-
 #menu ul {
 	list-style: none;
 	padding: 0;
 	margin: 0;
-	display: none;
+	background: red;
+	margin-top: 15px;
+	height: 0;
+	transform: scaleY(0);
+	transition: transform 0.7s;
 }
 
 #menu:hover ul {
-	display: block;
+	height: auto;
+	transform: scaleY(1);
 }
 
 #menu ul li {
-	display: block;
+	display: none;
 	width: 100%;
 	text-align: center;
+}
+
+#menu:hover li {
+	display: block;
 }
 
 #menu ul li a {
@@ -99,6 +101,11 @@ nav {
 }
 
 #search {
+	margin-top: 30px;
+}
+
+#menu:hover ~ #search {
+	margin-top: 15px;
 }
 
 #search:after {
@@ -182,27 +189,31 @@ section article:after {
 .noel img{
 	margin-left:345px;
 }
+
 .noel h3, .noel h4, .noel p{
 	text-align:center;
 }
 
-
-
 footer {
 	border: 1px solid black;
 	margin-bottom: 1px;	
-	background-color:#4053DA;
+	background-color: #0b20b7;
+}
+
+footer, footer a {
+	color: #feffd5;
 }
 
 footer h3 {
 	margin-top: 0px;
 	font-size: 40px;
+	font-weight: normal;
 }
 
 #contact {
 	margin-top: 30px;
 	margin-bottom: 60px;
-	font-size: 25px;	
+	font-size: 18px;	
 	text-align: center;
 }
 
@@ -218,15 +229,12 @@ footer h3 {
 #contact .imgRéseau {
 	width: 40px;
 	margin-right: 10px;
+	margin-left: 5px;
 	vertical-align: middle;
 }
 
 #footerMail {
 	font-size: 32px;
-}
-
-#contact ul li a{
-	text-decoration:none;
 }
 
 
