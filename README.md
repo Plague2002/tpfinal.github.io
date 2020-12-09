@@ -14,11 +14,13 @@
   </li>
   <li>Envoyer au prof (en .ZIP)</li>
 </ul>
-
-<p>
-Pour le responsive, il faut utiliser cette taille apparement c'est un truc standard pour repérer un écran d'ordinateur<br/>
-@media only screen and (min-width : 1224px) {}
-</p>
+<h2>Ressources</h2>
+<ul>
+  <li><p>Pour le responsive, il faut utiliser cette taille apparement c'est un truc standard pour repérer un écran d'ordinateur<br/>
+    @media only screen and (min-width : 1224px) {}</p></li>
+  <li><p>La palette de couleur choisie</p>
+    https://www.instagram.com/p/CIVErZaAh7o/</li>
+</ul>
 <h1>Consigne</h1>
 https://perso.liris.cnrs.fr/pierre-antoine.champin/enseignement/intro-web/projet.html
 <h1>Site</h1>
