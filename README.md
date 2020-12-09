@@ -14,6 +14,11 @@
   </li>
   <li>Envoyer au prof (en .ZIP)</li>
 </ul>
+
+<p>
+Pour le responsive, il faut utiliser cette taille apparement c'est un truc standard pour repérer un écran d'ordinateur<br/>
+@media only screen and (min-width : 1224px) {}
+</p>
 <h1>Consigne</h1>
 https://perso.liris.cnrs.fr/pierre-antoine.champin/enseignement/intro-web/projet.html
 <h1>Site</h1>
