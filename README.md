@@ -1,15 +1,8 @@
 <h1>Liste des choses à faire</h1>
 <ul>
-  <li>Finir le HTML
-    <ul>
-      <li>Remplir le contenu de chaque page (page de recherche, page d'article et page de présentation)</li>
-    </ul>
-  </li>
   <li>Faire le CSS
     <ul>
       <li>Adapter en version PC</li>
-      <li>Stylisé le contenu (placement)</li>
-      <li>Stylisé la page (couleur et charte graphique)</li>
     </ul>
   </li>
   <li>Envoyer au prof (en .ZIP)</li>
