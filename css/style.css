@@ -15,7 +15,7 @@ header, footer {
 	
 }
 
-header, footer, article, footer a{
+header, footer, article, a{
 	color: #feffd5;	
 }
 
@@ -157,7 +157,7 @@ section {
 
 section h2 {
 	text-align: center;
-	font-size: 32px;
+	font-size: 38px;
 }
 
 section h3 {
@@ -242,7 +242,153 @@ section img {
 	text-align: center;
 }
 
-/*-------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------*/
+
+#commande h3 {
+	margin-top: 8px;
+	text-align: center;
+}
+
+#commande table {
+	width: 100%;
+	border: 3px solid black;
+	border-collapse: collapse
+}
+
+#commande table * {
+	font-size: 28px;
+}
+
+#commande #legendeTableau {
+	font-weight: bold;
+	font-size: 32px;
+	background: green;
+}
+
+#commande tr {
+	height: 54px;
+	color: black;
+}
+
+#commande td {
+	border: 3px solid black;
+	border-collapse: collapse;
+	padding: 10px;
+}
+
+
+#commande tr:nth-child(even) {
+	background: #b3b3b3;
+}
+
+#commande tr:nth-child(odd) {
+	background: white;
+}
+
+/*---------------------*/
+
+#coordonnees h4 {
+	text-align: center;
+}
+
+#coordonnees form > div {
+	margin-bottom: 60px;
+}
+
+#coordonnees form div div {
+	width: 100%;
+}
+
+#coordonnees form label {
+	display: inline-block;
+	width: 50%;
+	margin-right: 30px;
+	text-align: right;
+	font-size: 32px;
+	height: 54px;
+}
+
+#coordonnees form input {
+	display: inline-block;
+}
+
+#coordonnees form input, section textarea {
+	width: 40%;
+	font-size: 24px;
+	padding: 5px;
+	border-radius: 10px;
+}
+
+section textarea {
+	border-radius: 0px;
+	height: 100px;
+	vertical-align: middle;
+}
+
+#dateExpiration h5 {
+	margin-left: 100px;
+	font-size: 24px;
+}
+
+#dateExpiration div label {
+	width: 40%;
+}
+
+#dateExpiration select {
+	display: inline-block;
+	border-radius: 5px;
+	padding: 5px;
+	vertical-align: baseline;
+	font-size: 24px;
+	
+}
+
+#flexSelect, #photoNous {
+	display: flex;
+	justify-content: center;
+}
+
+#coordonnees form #flexSelect div{
+	width: 250px;
+}
+
+section button {
+	width: 270px;
+	font-size: 24px;
+	padding: 15px;
+	border-radius: 10px;
+	background: #ff8ca4;
+}
+
+#boutonForm {
+	margin-bottom: 10px;
+	margin: auto;
+	width: 270px;
+}
+
+/*-----------------------*/
+
+#presentation img {
+	height: 300px;
+}
+
+#presentation h3 {
+	margin-bottom: 30px;
+}
+
+#nael {
+	transform: rotate(-10deg);
+}
+
+#martin {
+	transform: rotate(10deg);
+}
+
+#textePresentation {
+	margin-top: 50px;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------*/
 
 footer {
 	border: 1px solid black;
@@ -284,4 +430,338 @@ footer h3 {
 	font-size: 32px;
 }
 
+/*----------------------------------------------------------------*/
 
+.en_stock, .livraison, .out_of_stock {
+	color: black;
+	display: inline;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+.en_stock {
+	background: #40E90A;
+}
+
+.livraison {
+	background: #F6A117;
+}
+
+.out_of_stock {
+	background: #f73d3d;
+}
+
+#Liste_Produit .img_velo {
+	width: 280px;
+}
+
+#Liste_Produit .img_robot {
+	width: 280px;
+}
+
+#Liste_Produit article:after {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+#Liste_Produit article:nth-child(even) img {
+	float: left;
+	margin-right: 20px;
+}
+
+#Liste_Produit article:nth-child(odd) img {
+	float: right;
+	margin-left: 20px;
+}
+
+#Liste_Produit article a {
+	color: #feffd5;
+}
+
+/*----------------------------*/
+
+#produit h3 {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+#produit #imgProduit {
+	margin: auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+#produit img, #produit #imgProduit {
+	width: 500px;
+}
+
+#produit .description {
+	margin: 50px;
+	margin-bottom: 0px;
+	font-size: 16px;
+	text-align: center;
+}
+
+#produit .prix, #produit .divLivr {
+	text-align: right;
+	margin-right: 80px;
+	margin-top: 20px;
+}
+
+#produit .prix {
+	margin-top: 40px;
+}
+
+#produit .ancienPrix {
+	text-decoration: line-through;
+	margin-right: 20px;
+	font-size: 14px;
+}
+
+#produit .livraison {
+	font-size: 12px;
+}
+
+#produit .panier {
+	float: left;
+	margin-top: 40px;
+	margin-left: 80px;
+}
+
+#produit .panier label {
+	font-size: 40px;
+	margin-right: 15px;
+}
+
+
+#produit .panier input {
+	display: inline-block;
+	font-size: 24px;
+	width: 100px;
+	height: 30px;
+	vertical-align: top;
+	padding: 5px;
+	border-radius: 10px;
+	text-align: center;
+}
+
+#produit #boutonForm {
+	margin-top: 10px;
+}
+
+
+#produit form button {
+	font-size: 30px;
+}
+
+#produit .commentaire {
+	margin-top: 80px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+#produit .titreComm {
+	margin-top: 50px;
+	margin-left: 20px;
+}
+
+#produit textarea {
+	height: 200px;
+	width: 100%;
+	font-size: 14px;
+}
+
+#produit .commentaire button, #produit .commentaire #boutonComm {
+	width: 170px;
+}
+
+#produit .commentaire #boutonComm {
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: 0px;
+}
+
+/*------------------------------------------------------------Responsive---------------------------------------------------------------------------*/
+
+@media only screen and (min-width : 1224px) {
+	
+	header {
+	position: relative;
+	margin-bottom: 50px;
+	}
+
+	header:after {
+		content: "";
+		clear: both;
+		display: block;
+	}
+
+	#titre {
+		margin-left:60px;
+		margin-bottom:60px;
+		width:80%;
+		text-align: center;
+		clear: both;
+		transform: rotate(-3deg);
+	}
+
+	#titre h1 {
+		margin: 0px;
+		font-size: 80px;
+	}
+
+	#titre h2 {
+		margin-top: 20px;
+		font-size: 46px;
+	}
+
+	#logo {
+		float: right;
+		position: absolute;
+		right: 1px;
+		top: -5px;
+	}
+
+	#logo img {
+		width: 350px;
+		height: 350px;
+	}
+
+	nav {
+		font-size: 36px;
+	}
+
+	#menu {
+		margin-top: 30px;
+	}
+
+	#menu:hover {
+		margin-top: inherit;
+		margin-bottom: 30px;
+	}
+
+	#menuTitre {
+		margin: auto;
+		text-align: center;
+	}
+
+	#menu ul {
+		list-style: none;
+		margin:auto;
+		display:inline-block;
+		padding: 0;
+		margin: 0;
+		margin-top: 15px;
+		height: inherit;
+		transform: inherit;
+		transition: inherit;
+	}
+
+	#menu:hover ul {
+		height: inherit;
+		transform: inherit;
+	}
+
+	#menu ul li {
+		display:inline;
+		width: 40%;
+		text-align: center;
+		background: red;
+	}
+
+	#menu:hover li {
+		display:inline;
+	}
+
+	#menu ul li a {
+		padding: 10px 0px;
+		border: 1px solid black;
+		display: inline;
+	}
+
+	#search {
+		margin-top: 30px;
+	}
+
+	#menu:hover ~ #search {
+		margin-top: inherit;
+	}
+
+	#search:after {
+		content: "";
+		clear: both;
+		display: block;
+	}
+
+	#searchBar {
+		width: 87%;
+		line-height: 50px;
+		font-size: 28px;
+		margin: 15px 10px;
+		border-width: 2px;
+		padding-left: 5px;
+	}
+
+	#searchButton {
+		margin: 10px;
+		margin-right: 15px;
+		width: 6%;
+		float: right;
+	}
+
+	#searchButton:hover {
+		width: 7%;
+		top: -1%;
+	}
+	
+	section {
+	width:60%;
+	margin:auto;
+	margin-bottom:100px;
+	}
+	
+	
+	
+	footer {
+	border: 1px solid black;
+	}
+
+	footer h3 {
+		margin-top: 0px;
+		font-size: 20px;
+		font-weight: normal;
+	}
+
+	#contact {
+		margin-top: 30px;
+		margin-bottom:30px;
+		font-size: 9px;	
+		text-align: center;
+	}
+
+	#contact ul {
+		list-style: none;
+		margin-bottom:15px;
+		padding: 0px;
+	}
+
+	#contact li {
+	margin-bottom:10px;
+	margin-left:30px;
+	display:inline;
+	font-size:25px;
+	}
+
+	#contact .imgRéseau {
+		width: 40px;
+		margin-right: 10px;
+		margin-left: 5px;
+		vertical-align: middle;
+	}
+
+	#footerMail {
+		font-size: 16px;
+		margin-bottom:0px;
+	}
+}

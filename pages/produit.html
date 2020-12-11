@@ -37,60 +37,36 @@
 		</header>
 		
 		
-		<section id="Liste_Produit">
-			<h2>Résultats de recherche</h2>
-			
+		<section id="produit">
+			<h2>Présentation d'un produit</h2>
 			<article>
-				<a href="produit.html">
-					<h3>Boîte de Lego<sup>®</sup> de 500 pièces</h3>
-					<img src="../images/lego.jpg" alt="img Produit"/>
-					<h4>79.99€</h4>
-					<p class="en_stock">En stock</p>
-					<p>Une boîte contenant 500 pièces de Lego<sup>®</sup> pour des heures d'amusement</p>
-				</a>
-			</article>
-			
-			<article>
-				<a href="produit.html">
-					<h3>Recharge de pistolet Nerf<sup>®</sup></h3>
+				<h3>Recharge de pistolet Nerf<sup>®</sup></h3>
+				<div id="imgProduit">
 					<img src="../images/recharge.jpg" alt="img Produit"/>
-					<h4>5.00€</h4>
+				</div>
+				<p class="description">De quoi recharger ses pistolets Nerf<sup>®</sup> en moins de 30 minutes pour pouvoir repartir au combat !</p>
+				<form class="panier" action="commande.html" method="post" enctype="multipart/form-data">
+					<div><label for="quantite">Quantité :</label><input type="number" name="quantite" value="1"/></div>
+					<div id="boutonForm">
+						<button>Ajouter au panier</button>
+					</div>
+				</form>
+				<div class="prix"><span class="ancienPrix">8.00€</span>5.00€</div>
+				<div class="divLivr">
 					<p class="livraison"> Livraison en attente</p>
-					<p>De quoi recharger ses pistolets Nerf<sup>®</sup> en moins de 30 minutes pour pouvoir repartir au combat !</p>
-				</a>
+				</div>
+				<div class="commentaire">
+					<p class="titreComm">Donnez nous votre avis sur cet article</p>
+					<div>
+						<form class="commentaireForm" action="../index.html" method="post" enctype="multipart/form-data">
+							<textarea placeholder="Votre avis ici..."></textarea>
+							<div id="boutonComm">
+								<button>Envoyer</button>
+							</div>
+						</form>
+					</div>
+				</div>
 			</article>
-			
-			<article>
-				<a href="produit.html">
-					<h3>Cabane Playmobil<sup>®</sup></h3>
-					<img src="../images/cabane.jpg" alt="img Produit"/>
-					<h4>25.00€</h4>
-					<p class="en_stock">En stock</p>
-					<p>Une cabane à monter soi-même pour y faire habiter ses petits personnages</p>
-				</a>
-			</article>
-		
-			<article>
-				<a href="produit.html">
-					<h3>Vélo VTT Tout-Terrain</h3>
-					<img src="../images/vélo.jpg" alt="img Produit" class="img_velo"/>
-					<h4>0.89€</h4>
-					<p class="en_stock">En stock</p>
-					<p>Vélo pouvant rouler sur tout type de terrain sans aucun problème. Il vous mènera au bout du monde et au delà</p>
-				</a>
-			</article>
-			
-			<article>
-				<a href="produit.html">
-					<h3>Robot nettoyeur automatique</h3>
-					<img src="../images/mine.jpg" alt="img Produit" class="img_robot"/>
-					<h4>999.99€</h4>
-					<p class="out_of_stock">Stock vide</p>
-					<p>Ce robot activable par le pied nettoie instantanément tout dans un rayon de plus de 300m !</p>
-				</a>
-			</article>
-			
-			
 		</section>
 		
 		
