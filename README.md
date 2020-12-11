@@ -7,7 +7,7 @@
   </li>
   <li>Envoyer au prof (en .ZIP)</li>
 </ul>
-<h2>Ressources</h2>
+<h1>Ressources</h1>
 <ul>
   <li><p>Pour le responsive, il faut utiliser cette taille apparement c'est un truc standard pour repérer un écran d'ordinateur<br/>
     @media only screen and (min-width : 1224px) {}</p></li>
