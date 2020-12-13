@@ -59,7 +59,6 @@ header:after {
 
 #logo img {
 	width: 270px;
-	height: 270px;
 }
 
 nav {
@@ -178,6 +177,12 @@ section article {
 	border-radius: 30px;
 	background-color: #016df7;
 	padding: 20px;
+}
+
+section article:after {
+	content: "";
+	clear: both;
+	display: block;
 }
 
 section .lienDetail {
