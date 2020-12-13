@@ -239,10 +239,14 @@ section img {
 
 /*-------*/
 
-.noel img {
+#imgNoel {
 	margin: auto;
 }
 
+#imgNoel, .noel img {
+	width: 260px;
+}
+	
 .noel h3, .noel h4 {
 	text-align: center;
 }
