@@ -83,7 +83,6 @@ nav {
 	list-style: none;
 	padding: 0;
 	margin: 0;
-	background: red;
 	margin-top: 15px;
 	height: 0;
 	transform: scaleY(0);
@@ -97,6 +96,8 @@ nav {
 
 #menu ul li {
 	display: none;
+	background: red;
+	border: 1px solid black;
 	width: 100%;
 	text-align: center;
 }
@@ -105,10 +106,13 @@ nav {
 	display: block;
 }
 
-#menu ul li a {
+#menu ul a {
 	padding: 10px 0px;
-	border: 1px solid black;
 	display: block;
+}
+
+#menuRecherche {
+	display: none;
 }
 
 #search {
@@ -149,9 +153,7 @@ nav {
 /*-----------------------------------------------*/
 
 section {
-	margin-left: 20px;
-	margin-right: 20px;
-	margin-bottom: 100px;
+	margin: 0px 20px 100px 20px;
 }
 
 section h2 {
@@ -261,7 +263,7 @@ section img {
 #commande table {
 	width: 100%;
 	border: 3px solid black;
-	border-collapse: collapse
+	border-collapse: collapse;
 }
 
 #commande table * {
@@ -397,48 +399,6 @@ section button {
 	margin-top: 50px;
 }
 
-/*--------------------------------------------------------------------------------------------------------------------------------*/
-
-footer {
-	border: 1px solid black;
-}
-
-footer, footer a {
-}
-
-footer h3 {
-	margin-top: 0px;
-	font-size: 40px;
-	font-weight: normal;
-}
-
-#contact {
-	margin-top: 30px;
-	margin-bottom: 60px;
-	font-size: 18px;	
-	text-align: center;
-}
-
-#contact ul {
-	list-style: none;
-	padding: 0px;
-}
-
-#contact li {
-	margin-bottom: 10px;
-}
-
-#contact .imgRéseau {
-	width: 40px;
-	margin-right: 10px;
-	margin-left: 5px;
-	vertical-align: middle;
-}
-
-#footerMail {
-	font-size: 32px;
-}
-
 /*----------------------------------------------------------------*/
 
 .en_stock, .livraison, .out_of_stock {
@@ -543,7 +503,6 @@ footer h3 {
 	margin-right: 15px;
 }
 
-
 #produit .panier input {
 	display: inline-block;
 	font-size: 24px;
@@ -591,80 +550,101 @@ footer h3 {
 	margin-right: 0px;
 }
 
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+
+footer {
+	border: 1px solid black;
+}
+
+footer h3 {
+	margin-top: 0px;
+	font-size: 40px;
+	font-weight: normal;
+}
+
+#contact {
+	margin-top: 30px;
+	margin-bottom: 50px;
+	font-size: 18px;	
+	text-align: center;
+}
+
+#contact ul {
+	list-style: none;
+	padding: 0px;
+}
+
+#contact li {
+	margin-bottom: 10px;
+}
+
+#contact .imgRéseau {
+	width: 40px;
+	margin-right: 10px;
+	margin-left: 5px;
+	vertical-align: middle;
+}
+
+#footerMail {
+	font-size: 32px;
+}
+
 /*------------------------------------------------------------Responsive---------------------------------------------------------------------------*/
 
-@media only screen and (min-width : 1224px) {
-	
-	header {
-	position: relative;
-	margin-bottom: 50px;
+@media only screen and (min-width : 1200px) {
+
+	#titre {
+		padding-top: 50px;
+		margin-bottom: 60px;
+		width: 75%;
+		transform: rotate(-3deg);
 	}
 
-	header:after {
+	#titre h2 {
+		font-size: 38px;
+	}
+
+	#logo {
+		top: -10px;
+	}
+
+	#logo img {
+		width: 300px;
+		margin-right: 40px;
+	}
+	
+	#headerHeader {
+		height: 270px;
+	}
+
+	#headerHeader:after {
 		content: "";
 		clear: both;
 		display: block;
 	}
-
-	#titre {
-		margin-left:60px;
-		margin-bottom:60px;
-		width:80%;
-		text-align: center;
-		clear: both;
-		transform: rotate(-3deg);
-	}
-
-	#titre h1 {
-		margin: 0px;
-		font-size: 80px;
-	}
-
-	#titre h2 {
-		margin-top: 20px;
-		font-size: 46px;
-	}
-
-	#logo {
-		float: right;
-		position: absolute;
-		right: 1px;
-		top: -5px;
-	}
-
-	#logo img {
-		width: 350px;
-		height: 350px;
-	}
-
+	
 	nav {
-		font-size: 36px;
+		font-size: 28px;
+		display: flex;
+		padding: 0px;
 	}
-
-	#menu {
-		margin-top: 30px;
+	
+	nav > div {
+		width: 50%;
 	}
 
 	#menu:hover {
-		margin-top: inherit;
-		margin-bottom: 30px;
+		margin-top: 30px;
 	}
-
-	#menuTitre {
-		margin: auto;
-		text-align: center;
-	}
+	
 
 	#menu ul {
-		list-style: none;
-		margin:auto;
-		display:inline-block;
-		padding: 0;
-		margin: 0;
-		margin-top: 15px;
 		height: inherit;
 		transform: inherit;
 		transition: inherit;
+		content: "";
+		clear: both;
+		display: block;
 	}
 
 	#menu:hover ul {
@@ -673,104 +653,88 @@ footer h3 {
 	}
 
 	#menu ul li {
-		display:inline;
-		width: 40%;
-		text-align: center;
-		background: red;
+		display: block;
+		height: 48px;
+		width: 33%;
+		float: left;
 	}
-
-	#menu:hover li {
-		display:inline;
-	}
-
-	#menu ul li a {
+	
+	#menu ul a {
 		padding: 10px 0px;
-		border: 1px solid black;
-		display: inline;
-	}
-
-	#search {
-		margin-top: 30px;
 	}
 
 	#menu:hover ~ #search {
-		margin-top: inherit;
+		margin-top: 30px;
 	}
 
-	#search:after {
-		content: "";
-		clear: both;
+	nav li, #searchBar {
+		font-size: 22px;
+	}
+
+	#menuRecherche {
 		display: block;
+		margin: 0px;
+		text-align: center;
+		margin-bottom: 15px;
 	}
 
 	#searchBar {
-		width: 87%;
-		line-height: 50px;
-		font-size: 28px;
-		margin: 15px 10px;
-		border-width: 2px;
-		padding-left: 5px;
+		height: 47px;
+		width: calc(100% - 110px);
+		margin: inherit;
+		padding: 0px;
+		padding-left: 10px;
 	}
 
 	#searchButton {
-		margin: 10px;
-		margin-right: 15px;
-		width: 6%;
-		float: right;
+		margin-rigth: 5px;
+		width: 65px;
+		margin-top: -7px;
 	}
 
 	#searchButton:hover {
-		width: 7%;
-		top: -1%;
+		width: 70px;
 	}
+	
+	/*-------------------------------------------------*/
 	
 	section {
-	width:60%;
-	margin:auto;
-	margin-bottom:100px;
+		width: 60%;
+		margin: auto;
+		margin-bottom: 100px;
 	}
 	
-	
-	
-	footer {
-	border: 1px solid black;
-	}
+	/*-------------------------------------------------*/
 
+	footer h3, #footerMail {
+		font-size: 24px;
+	}
+	
 	footer h3 {
-		margin-top: 0px;
-		font-size: 20px;
-		font-weight: normal;
+		margin-bottom: 20px;
 	}
 
 	#contact {
-		margin-top: 30px;
-		margin-bottom:30px;
-		font-size: 9px;	
-		text-align: center;
+		margin-top: 20px;
+		margin-bottom: 30px;	
 	}
 
 	#contact ul {
-		list-style: none;
-		margin-bottom:15px;
-		padding: 0px;
+		margin-bottom: 30px;
 	}
 
 	#contact li {
-	margin-bottom:10px;
-	margin-left:30px;
-	display:inline;
-	font-size:25px;
+		margin-left: 30px;
+		display: inline;
+		font-size: 20px;
 	}
-
+	
+	#contact li:first-child {
+		margin-left: 0px;
+	}
+	
 	#contact .imgRéseau {
-		width: 40px;
-		margin-right: 10px;
-		margin-left: 5px;
-		vertical-align: middle;
-	}
-
-	#footerMail {
-		font-size: 16px;
-		margin-bottom:0px;
+		width: 20px;
+		margin-left: 3px;
 	}
 }
