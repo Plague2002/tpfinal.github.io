@@ -45,16 +45,21 @@
 				<div id="imgProduit">
 					<img src="../images/recharge.jpg" alt="img Produit"/>
 				</div>
-				<p class="description">De quoi recharger ses pistolets Nerf<sup>®</sup> en moins de 30 minutes pour pouvoir repartir au combat !</p>
-				<form class="panier" action="commande.html" method="post" enctype="multipart/form-data">
-					<div><label for="quantite">Quantité :</label><input type="number" name="quantite" id="quantite" value="1"/></div>
-					<div id="boutonForm">
-						<button>Ajouter au panier</button>
+				<div id="produitInfos">
+					<p class="description">De quoi recharger ses pistolets Nerf<sup>®</sup> en moins de 30 minutes pour pouvoir repartir au combat !</p>
+					<form class="panier" action="commande.html" method="post" enctype="multipart/form-data">
+						<div>
+							<label for="quantite">Quantité :</label>
+							<input type="number" name="quantite" id="quantite" value="1" max="10"/>
+						</div>
+						<div id="boutonForm">
+							<button>Ajouter au panier</button>
+						</div>
+					</form>
+					<div class="prix"><span class="ancienPrix">8.00€</span>5.00€</div>
+					<div class="divLivr">
+						<p class="livraison"> Livraison en attente</p>
 					</div>
-				</form>
-				<div class="prix"><span class="ancienPrix">8.00€</span>5.00€</div>
-				<div class="divLivr">
-					<p class="livraison"> Livraison en attente</p>
 				</div>
 				<div class="commentaire">
 					<p class="titreComm">Donnez nous votre avis sur cet article</p>

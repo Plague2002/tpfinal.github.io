@@ -7,16 +7,20 @@ body {
 	background-color: #ffd150;
 }
 
-header a, footer a {
+header a, footer a, section a, section a:visited {
 	text-decoration: none;
 }
+
 header, footer {
 	background-color: #5243c2;
-	
 }
 
 header, footer, article, a{
 	color: #feffd5;	
+}
+
+sup {
+	font-size: 0.65em;
 }
 
 /*------------------------------------------------------------*/
@@ -96,7 +100,7 @@ nav {
 
 #menu ul li {
 	display: none;
-	background: red;
+	background: #FF8CA4;
 	border: 1px solid black;
 	width: 100%;
 	text-align: center;
@@ -196,7 +200,6 @@ section .lienDetail {
 
 section a, section a:visited {
 	color: #ff5219;
-	text-decoration: none;
 }
 
 section img {
@@ -351,7 +354,6 @@ section textarea {
 	padding: 5px;
 	vertical-align: baseline;
 	font-size: 24px;
-	
 }
 
 #flexSelect, #photoNous {
@@ -371,9 +373,9 @@ section button {
 	background: #ff8ca4;
 }
 
-#boutonForm {
-	margin-bottom: 10px;
+#coordonnees form #boutonForm {
 	margin: auto;
+	margin-bottom: 30px;
 	width: 270px;
 }
 
@@ -702,6 +704,68 @@ footer h3 {
 		margin: auto;
 		margin-bottom: 100px;
 	}
+
+	section article p {
+		font-size: 20px;
+	}
+	
+	section article h3 {
+		font-size: 40px;
+	}
+	
+	section article h4 {
+		font-size: 30px;
+	}
+	
+	section .lienDetail {
+		font-size: 18px;
+	}
+	
+	.blackFriday img{
+		width: 300px;
+	}
+	
+	.playmo img {
+		width: 260px;
+	}
+	
+	.rhino img {
+		margin-right: 30px;
+		width: 190px;
+	}
+	
+	/*-------------------------------*/
+	
+	#Liste_Produit article h3 {
+		margin-left: 20px;
+	}
+	
+	#Liste_Produit article h4 {
+		margin-bottom: 0px;
+	}
+	
+	#Liste_Produit article p {
+		margin-top: 50px;
+	}
+	
+	#Liste_Produit article:nth-child(even) .en_stock, #Liste_Produit article:nth-child(even) .out_of_stock {
+		float: left;
+		margin: 0px;
+		width: auto;
+	}
+	
+	#Liste_Produit article:nth-child(odd) .livraison, #Liste_Produit article:nth-child(odd) .en_stock {
+		float:left;
+		margin:0px;
+		width: auto;
+		margin-right:0px;
+	}
+	
+	#Liste_Produit article a:after {
+		content: "";
+		clear: both;
+		display: block;
+	}
 	
 	/*-------------------------------------------------*/
 
@@ -735,5 +799,139 @@ footer h3 {
 	#contact .imgRéseau {
 		width: 20px;
 		margin-left: 3px;
+	}
+	
+	/*---------------------*/
+	
+	#presentation img {
+		height: 200px;
+	}
+	
+	/*--------------*/
+	
+	#commande table, #commande td {
+		border-width: 2px;
+	}
+	
+	#commande table {
+		width: 80%;
+		margin: auto;
+		margin-bottom: 30px;
+	}
+	
+	#panier table * {
+		font-size: 16px;
+	}
+	
+	#panier tr {
+		height: 44px;
+	}
+	
+	#coordonnees form label, #produit .panier label {
+		font-size: 18px;
+		height: 36px;
+	}
+	
+	#coordonnees form input, section textarea, #produit .panier input {
+		width: 30%;
+		font-size: 16px;
+		padding-left: 10px;
+		border-radius: 5px;
+	}
+	
+	#dateExpiration select {
+		font-size: 16px;
+	}
+	
+	textarea {
+		resize: none;
+	}
+	
+	section button, #produit form button  {
+		font-size: 18px;
+		width: 230px;
+	}
+	
+	#coordonnees form #boutonForm {
+		margin-bottom: 10px;
+		width: 230px;
+	}
+	
+	#coordonnees h4 {
+		width: 100%;
+		margin-top: 0px;
+	}
+	
+	/*------------------*/
+	
+	#produit h3, #presentation h3, #Liste_Produit h3 {
+		margin-top: 10px;
+	}
+	
+	#produit img, #produit #imgProduit {
+		width: 300px;
+		margin: 0px;
+	}
+	
+	#produit #imgProduit {
+		margin: 0px;
+		margin-left: 40px;
+		margin-right: 40px;
+		float: left;
+	}
+	
+	#produit .panier {
+		width: 230px;
+		margin: 0px;
+		margin-top: 20px;
+		margin-bottom: 15px;
+	}
+	
+	#produit .panier input {
+		height: 20px;
+		width: 80px;
+		vertical-align: baseline;
+	}
+	
+	#produit textarea {
+		height: 100px;
+		width: 65%;
+		padding: 10px;
+		font-size: 16px;
+		margin-right: 2%;
+	}
+	
+	#produitInfos {
+		width: calc(100% - 390px);
+		float: right;
+		padding-right: 10px;
+	}
+	
+	#produit .description {
+		font-size: 20px;
+		margin: 0px;
+	}
+	
+	#produit .commentaire:before {
+		content: "";
+		clear: both;
+		display: block;
+	}
+	
+	#produit .commentaire #boutonComm {
+		margin: 0px;
+		margin-top: 22px;
+		margin-right: 2%;
+		float: right;
+	}
+	
+	#produit .commentaire .titreComm {
+		margin-top: 30px;
+	}
+	
+	.commentaireForm:after {
+		content: "";
+		clear: both;
+		display: block;
 	}
 }
